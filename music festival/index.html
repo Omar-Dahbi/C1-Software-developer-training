@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="a Fake Music Festival made with the sole purpose of making a boatload of money so that i don't have to work for bezos anymore">
+  <meta name="author" content="Me, Myself and I">
+  <title>Summer Music Festival 2024</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NavBar-->
+  <!-- Tried to make sure that each link brings you to the correct section -->
+  <nav class="navbar" role="navigation">
+    <ul class="nav-list">
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#tickets">Tickets</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+  <!-- Tired to use as much semantic tags and aria that i could. Some might be not correct though-->
+  <!-- Used the tabindex=o to make sure that i could focus on it (at least that's what i saw online) -->
+  <!-- at the beginning i used the same class for each div containing the aritst so that i could keep a uniformity in the css, but i decided later to the artist line up divs more colorful when hovering so had to change the class for this section -->
+  <section class="hero-section" role="region" aria-labelledby="hero-section-header">
+    <div class="background-image" style="background-image: url('http://tiny.cc/concert-image');"></div>
+    <div class="overr-lay">
+      <div class="content">
+        <h1 id="hero-section-header" class="headline">A very BAD summer festival</h1>
+        <p class="subheadline">Join us for four very forgettable days of bad music and sadness</p>
+        <p class="explanation">"For whomever is reading this, i listen to amost none of them, but most of the music i know and listen to was made by people that are currently dead and buried, and so very difficult to book for a festival"</p>
+        <p class="request">don't judge me, judge the billboad charts where i got the names.</p>
+        <div class="days-container">
+          <div class="days-hero-box" tabindex="0">
+            <h2>Day 1 - August 15</h2>
+            <ul>
+              <li><strong>Major Act:</strong></li>
+              <li><strong>The Weeknd</strong></li>
+              <li>Supporting Acts:</li>
+              <li>Dua Lipa</li>
+              <li>Khalid</li>
+              <li>Billie Eilish</li>
+              <li>Post Malone</li>
+            </ul>
+          </div>
+          <div class="days-hero-box" tabindex="0">
+            <h2>Day 2- August 16</h2>
+            <ul>
+              <li><strong>Major Act:</strong></li>
+              <li><strong>Taylor Swift</strong></li>
+              <li>Supporting Acts:</li>
+              <li>Ed Sheeran</li>
+              <li>Lizzo</li>
+              <li>Shawn Mendes</li>
+              <li>Halsey</li>
+            </ul>
+          </div>
+          <div class="days-hero-box" tabindex="0">
+            <h2>Day 3 - August 17</h2>
+            <ul>
+              <li><strong>Major Act:</strong></li>
+              <li><strong>BTS</strong></li>
+              <li>Supporting Acts:</li>
+              <li>Ariana Grande</li>
+              <li>Justin Bieber</li>
+              <li>Cardi B</li>
+            </ul>
+          </div>
+          <div class="days-hero-box" tabindex="0">
+            <h2>Day 4 - August 18</h2>
+            <ul>
+              <li><strong>Major Act:</strong></li>
+              <li><strong>Drake</strong></li>
+              <li>Supporting Acts:</li>
+              <li>J. Cole</li>
+              <li>Travis Scott</li>
+              <li>Megan Thee Stallion</li>
+              <li>Lil Nas X</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#tickets" class="button">Buy Tickets</a>
+      </div>
+    </div>
+  </section>
+  <!--Artist line up -->
+  <section id="artists" class="artist-lineup" role="region" aria-labelledby="artists-header">
+    <h2 id="artists-header">Bad Artist Lineup</h2>
+    <div class="days-container">
+      <div class="days-box" tabindex="0" id="day1">
+        <h2>Day 1</h2>
+        <ul>
+          <li><strong>Major Act: The Weeknd</strong></li>
+          <li>Supporting Acts:</li>
+          <li>Dua Lipa</li>
+          <li>Khalid</li>
+          <li>Billie Eilish</li>
+          <li>Post Malone</li>
+        </ul>
+      </div>
+      <div class="days-box" tabindex="0" id="day2">
+        <h2>Day 2</h2>
+        <ul>
+          <li><strong>Major Act: Taylor Swift</strong></li>
+          <li>Supporting Acts:</li>
+          <li>Ed Sheeran</li>
+          <li>Lizzo</li>
+          <li>Shawn Mendes</li>
+          <li>Halsey</li>
+        </ul>
+      </div>
+      <div class="days-box" tabindex="0" id="day3">
+        <h2>Day 3</h2>
+        <ul>
+          <li><strong>Major Act:</strong></li>
+          <li><strong>BTS</strong></li>
+          <li>Supporting Acts:</li>
+          <li>Ariana Grande</li>
+          <li>Justin Bieber</li>
+          <li>Cardi B</li>
+        </ul>
+      </div>
+      <div class="days-box" tabindex="0" id="day4">
+        <h2>Day 4</h2>
+        <ul>
+          <li><strong>Major Act:</strong></li>
+          <li><strong>Drake</strong></li>
+          <li>Supporting Acts:</li>
+          <li>J. Cole</li>
+          <li>Travis Scott</li>
+          <li>Megan Thee Stallion</li>
+          <li>Lil Nas X</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Ticket section -->
+  <section id="tickets" class="tickets-section" role="region" aria-labelledby="tickets-header">
+    <h2 id="tickets-header">Overpriced Ticket section</h2>
+    <div class="ticket-box" id="ga-ticket-box">
+      <h3>General Admission</h3>
+      <p>Access to all days</p>
+      <p class="ticket-price">180 €</p>
+      <label for="general-admission">Quantity:</label>
+      <input type="number" id="general-admission" name="general-admission" min="1" max="6" value="1">
+    </div>
+    <div class="ticket-box" id="vip-ticket-box">
+      <h3>VIP Admission</h3>
+      <p>Access to all days with VIP perks</p>
+      <p class="ticket-price">250 €</p>
+      <label for="vip-admission">Quantity:</label>
+      <input type="number" id="vip-admission" name="vip-admission" min="1" max="6" value="1">
+    </div>
+    <div class="ticket-box" id="single-ticket-box">
+      <h3>Single Day Admission</h3>
+      <p class="ticket-price">90 €</p>
+      <p>Access to one day of your choice</p>
+      <label for="single-day-admission">Quantity:</label>
+      <input type="number" id="single-day-admission" name="single-day-admission" min="1" max="6" value="1">
+    </div>
+    <div class="ticket-box" id="group-ticket-box">
+      <h3>Group Admission</h3>
+      <p>Access for a group of 5 people</p>
+      <p class="ticket-price">400 €</p>
+      <label for="group-admission">Quantity:</label>
+      <input type="number" id="group-admission" name="group-admission" min="1" max="6" value="1">
+    </div>
+    <a href="#tickets" class="button">Buy Tickets</a>
+  </section>
+  <section id="signup" class="signup-section" role="region" aria-labelledby="signup-header">
+    <h2 id="signup-header">Sign Up</h2>
+    <form class="signup-form">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <button type="submit" class="button">Sign Up</button>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- contact info -->
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: info@verybadmusicfestival.fr</p>
+        <p>Phone: +33 136963572</p>
+        <p>Address: a park in the middle of nowhere</p>
+      </div>
+      <!-- Social Media info  -->
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/pitchforkparis" target="_blank" aria-label="Facebook">Facebook</a></li>
+          <li><a href="https://www.instagram.com/pitchforkparis/?hl=en" target="_blank" aria-label="Instagram">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@pitchfork" target="_blank" aria-label="YouTube">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
